@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h4>es6 模块导出的是一个引用</h4>
+<script type="module">
+  import {b} from './b.js'
+  console.log(b); // 先打印12
+  setTimeout(()=>{
+    console.log(b); // 后打印13
+  },1000)
+</script>
+<script type="module" src="./circle-1.js"></script>
+</body>
+</html>

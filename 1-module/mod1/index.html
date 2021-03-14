@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div>es6 模块</div>
+<hr>
+<h4>es6 模块变量类似于const变量，如果重新赋值会报错</h4>
+<h4>在控制台看错误</h4>
+<script type="module">
+  console.log('晚于mod1中的打印');
+  import mod1 from './mod1.js'
+  console.log(mod1);
+  mod1 = 12
+</script>
+</body>
+</html>
