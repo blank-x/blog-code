@@ -1,4 +1,5 @@
-// 直接在nodejs中执行这个文件
+// 直接在nodejs中执行这个文件  
+// commonjs 循环引用
 var b = {f:12}
 module.exports = b
 var commonjs1 = require('./commonjs-1')
